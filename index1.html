@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Confirmation</title>
+</head>
+<body class="bg-white md:bg-slate-900 text-slate-900">
+    <div class="items-start align-middle 
+ bg-white flex flex-col md:w-auto md:rounded-3xl md:mx-96 md:my-60 md:p-8">
+    <img class="mt-28 m-4 p-3 md:mb-1 md:mt-5" src="icon-success.svg" alt="success">
+    <div>
+        <h1 class="text-5xl font-bold mx-4 mt-2 md:mt-1 p-3">
+            Thanks for subscribing!
+        </h1>
+        <p class="font-medium mx-4 mt-2 md:mt-1 p-3">
+            A Confirmation email has been sent to you on <b>******@gmail.com</b>. Please open it and click the button inside to confirm your subscription.
+        </p>
+    </div>
+    <button id="dismissbtn" class="font-medium mx-4 mt-80 mb-12 py-4 px-36 md:mt-8 rounded-lg text-white bg-slate-900 self-center hover:bg-slate-950" type="submit">Dismiss message</button>
+    </div>
+    <script>
+        var dismiss = document.getElementById('dismissbtn');
+dismiss.addEventListener('click', addEvent);
+
+
+function addEvent(e) {
+
+    window.location.href='index.html';
+}
+    </script>
+</body>
+</html>
